@@ -4,11 +4,13 @@
 
 - Spring发展历史
 
-  2002年10月 Rod Johnso写了一本书《Expert One-on-One J233》,提出了一个依赖注入的概念。书中他在不使用EJB的情况下，写了30000多行的基础代码，代码根包命名为com.interface21。2003年的时候，Rod Johnson给这个框架起了个名字Spring。
+  2002年10月 Rod Johnso写了一本书《Expert One-on-One
+  J233》,提出了一个依赖注入的概念。书中他在不使用EJB的情况下，写了30000多行的基础代码，代码根包命名为com.interface21。2003年的时候，Rod Johnson给这个框架起了个名字Spring。
 
 - Spring Boot的诞生
 
-  Spring的一个很大问题就是需要大量的配置和依赖管理。Spring每集成一个开源软件，就需要增加基础配置，后来人们直接称呼Spring为配置地狱。为了解决这个问题，2013年，Pivotal的CTO提出了实现免XML配置的开发体验。对于已经熟悉Spring生态系统的开发人员来说，Spring Boot是一个很理想的选择，对于采用Spring技术的新人来说，Spring提供了一种更简洁的方式来使用。
+  Spring的一个很大问题就是需要大量的配置和依赖管理。Spring每集成一个开源软件，就需要增加基础配置，后来人们直接称呼Spring为配置地狱。为了解决这个问题，2013年，Pivotal的CTO提出了实现免XML配置的开发体验。对于已经熟悉Spring生态系统的开发人员来说，Spring
+  Boot是一个很理想的选择，对于采用Spring技术的新人来说，Spring提供了一种更简洁的方式来使用。
 
 - 约定优于配置
 
@@ -16,41 +18,45 @@
 
 - Starters
 
-  Spring Boot Starter有两个核心组件：自动配置代码和提供自动配置代码及其它有用依赖，也就是说，当项目中引入某个Starter，就可以使用这个Starter的功能，除非和默认功能不一样的地方需要单独配置，否则不需要做任何配置。
+  Spring Boot
+  Starter有两个核心组件：自动配置代码和提供自动配置代码及其它有用依赖，也就是说，当项目中引入某个Starter，就可以使用这个Starter的功能，除非和默认功能不一样的地方需要单独配置，否则不需要做任何配置。
 
-  - Spring Boot Starts[列表](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter)
+    - Spring Boot Starts[列表](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#using-boot-starter)
 
 ### Spring的特点:[Why Spring](https://spring.io/why-spring)
 
 - Spring创建项目：[spring initializr](https://start.spring.io/)
-  - language：Java、Kotlin、Groovy（Java版本只有8、11、15是因为是长期维护版本，较稳定）
-  - [版本号后面字母的含义](https://blog.csdn.net/lizhenglyg/article/details/103147623?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161466363616780274148581%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=161466363616780274148581&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-3-103147623.first_rank_v2_pc_rank_v29&utm_term=%E7%89%88%E6%9C%AC%E5%8F%B7M2)
-  
+    - language：Java、Kotlin、Groovy（Java版本只有8、11、15是因为是长期维护版本，较稳定）
+    - [版本号后面字母的含义](https://blog.csdn.net/lizhenglyg/article/details/103147623?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161466363616780274148581%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=161466363616780274148581&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_v2~rank_v29-3-103147623.first_rank_v2_pc_rank_v29&utm_term=%E7%89%88%E6%9C%AC%E5%8F%B7M2)
+
 - Spring项目类型：[view all project](https://spring.io/projects)
 
 - 浏览器快捷键：打开新标签页ctrl+t、关闭当前页ctrl+w、新开窗口ctrl+n
 
 - Chrome应用商店安装插件LiveReload
 
-- Spring组成[Spring全面详解](https://blog.csdn.net/weixin_44207403/article/details/106736102?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161464286216780262561279%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161464286216780262561279&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-106736102.first_rank_v2_pc_rank_v29&utm_term=spring)![image-20210302190738281](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302190738281.png)![image-20210302190805804](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302190805804.png)
+-
+Spring组成[Spring全面详解](https://blog.csdn.net/weixin_44207403/article/details/106736102?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161464286216780262561279%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161464286216780262561279&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-106736102.first_rank_v2_pc_rank_v29&utm_term=spring)![image-20210302190738281](
+C:
+\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302190738281.png)![image-20210302190805804](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302190805804.png)
 
 - 发展历程：JSP、SSH、SSM、SpringBoot、SpringCloud
 
 - SpringBoot特点：
 
-  - **容灾**
+    - **容灾**
 
-  - 遵循“约定优于配置”的原则，简化配置
+    - 遵循“约定优于配置”的原则，简化配置
 
-  - 可以完全脱离XML配置文件,采用注解配置和java Config
+    - 可以完全脱离XML配置文件,采用注解配置和java Config
 
-  - 内嵌Servlet容器，应用可用jar包执行：java -jar
+    - 内嵌Servlet容器，应用可用jar包执行：java -jar
 
-  - 快速完成项目搭建、整合第三方类库，方便易用
+    - 快速完成项目搭建、整合第三方类库，方便易用
 
-  - 提供了starter POM, 能够非常方便的进行包管理, 简化包管理配置
+    - 提供了starter POM, 能够非常方便的进行包管理, 简化包管理配置
 
-  - 与Spring cloud天然集成，spring boot是目前java体系内实现微服务最佳方案
+    - 与Spring cloud天然集成，spring boot是目前java体系内实现微服务最佳方案
 
 ### Spring Boot集成第三方类库的步骤
 
@@ -61,7 +67,8 @@
 ## IDEA
 
 - 项目对象模型POM(project object model)是Maven对一个单一项目的描述
-- 项目结构目录符合maven规范要求![image-20210302190406272](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302190406272.png)
+-
+项目结构目录符合maven规范要求![image-20210302190406272](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302190406272.png)
 
 ### 插件
 
@@ -125,7 +132,8 @@
 
 #### Grep Console
 
-- 通过expression表达式过滤日志、给不同级别的日志或者给不同pattern的日志加上背景颜色与上层颜色![image-20210302201351425](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302201351425.png)
+-
+通过expression表达式过滤日志、给不同级别的日志或者给不同pattern的日志加上背景颜色与上层颜色![image-20210302201351425](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302201351425.png)
 
 #### Background Image Plus
 
@@ -151,14 +159,18 @@
 
 #### IDEA 热更新
 
-- 运行时编译配置：组合键：“Shift+Ctrl+Alt+/” ，选择 “Registry” ，选中打勾 ` compiler.automake.allow.when.app.running `![image-20210302194623096](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302194623096.png)
-- 打开Setting，勾选` Build project automatically `![image-20210302194750857](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302194750857.png)
-- 在` On ‘Update’ action `中换选` update classes and resources `![image-20210302194036918](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302194036918.png)
+- 运行时编译配置：组合键：“Shift+Ctrl+Alt+/” ，选择 “Registry”
+  ，选中打勾 ` compiler.automake.allow.when.app.running `![image-20210302194623096](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302194623096.png)
+-
+打开Setting，勾选` Build project automatically `![image-20210302194750857](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302194750857.png)
+- 在` On ‘Update’ action `
+  中换选` update classes and resources `![image-20210302194036918](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\image-20210302194036918.png)
 - 每次修改完代码按Ctrl+F9更新
 
 ## 课后问题
 
-- SSH是` struts+spring+hibernate `的一个集成框架。[SSH框架总结](https://blog.csdn.net/weixin_38911591/article/details/100242710?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161466737816780262573586%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161466737816780262573586&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-100242710.first_rank_v2_pc_rank_v29&utm_term=ssh%E6%A1%86%E6%9E%B6)
+- SSH是` struts+spring+hibernate `
+  的一个集成框架。[SSH框架总结](https://blog.csdn.net/weixin_38911591/article/details/100242710?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161466737816780262573586%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161466737816780262573586&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-1-100242710.first_rank_v2_pc_rank_v29&utm_term=ssh%E6%A1%86%E6%9E%B6)
 
 - 后端除了tomcat还有那些web容器？
 
