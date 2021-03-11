@@ -16,7 +16,6 @@ import java.util.List;
  **/
 @Data
 @Component
-@ConfigurationProperties(prefix = "family.mother")
 public class Mother {
     private String name;
     private List<String> alias;

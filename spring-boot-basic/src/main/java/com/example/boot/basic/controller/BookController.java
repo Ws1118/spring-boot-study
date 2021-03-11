@@ -18,6 +18,8 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
+import java.time.YearMonth;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 /**
@@ -260,5 +262,61 @@ public class BookController {
             AjaxResponse.failure("文件上传失败");
         }
         return AjaxResponse.success(fileName);
+    }
+
+    @PostMapping("files")
+    @ApiOperation("多图上传")
+    public AjaxResponse UploadFile(MultipartFile[] files, HttpServletRequest request) {
+        List<String> fileNames = new ArrayList<>();
+//        //创建文件在服务器的存放路径
+        YearMonth ym = YearMonth.now();
+        Calendar now = Calendar.getInstance();
+        for (MultipartFile file : files) {
+//            //判断文件是否有内容
+            if (file.isEmpty()) {
+                System.out.println("无文件");
+            } else {
+                //生成文件在服务器端存放的名字
+                String prefixName = UUID.randomUUID().toString();
+                //取得原文件名
+                String originalFilename = file.getOriginalFilename();
+                //从原文件m名中分离出扩展名（后缀） 111.jpg -> jpg
+                assert originalFilename != null;
+                String suffixName = originalFilename.substring(originalFilename.lastIndexOf("."));
+//                String str = suffixName;
+//                str.substring(1,str.length()-1);
+
+
+                //拼接新的文件名
+                System.out.println("dsffs"+suffixName);
+                System.out.println("dsffs"+prefixName);
+                String FileName = prefixName + suffixName;
+                String s = ym.format(DateTimeFormatter.ofPattern("yyyy-MM"));
+                int d = now.get(Calendar.DAY_OF_MONTH);
+                String path = request.getServletContext().getRealPath("upload/" + s + "/" + d + "/" + suffixName);
+                log.info(path);
+                File fileDir = new File(path);
+                if (!fileDir.exists()) {
+                    boolean flag = fileDir.mkdirs();
+                    log.info("flag" + flag);
+                }
+
+                //创建上传的文件对象
+                File saveFile = new File(path + "/" + FileName);
+                System.out.println("dsffs"+FileName);
+                //上传文件
+                try {
+                    file.transferTo(saveFile);
+                } catch (IOException e) {
+                    log.info(e.getMessage());
+                    AjaxResponse.failure("文件上传失败");
+
+                }
+                fileNames.add(FileName);
+                log.info(fileNames.toString());
+            }
+        }
+        return AjaxResponse.success(fileNames);
+
     }
 }

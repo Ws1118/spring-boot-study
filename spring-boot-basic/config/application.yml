@@ -1,0 +1,9 @@
+#server:
+#  port: 6666
+#
+#spring:
+#  servlet:
+#    multipart:
+#      max-file-size: 300MB
+#      max-request-size: 100MB
+

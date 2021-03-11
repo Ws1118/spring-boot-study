@@ -17,7 +17,6 @@ import org.springframework.stereotype.Component;
 //@AllArgsConstructor
 //@NoArgsConstructor
 @Component
-@ConfigurationProperties(prefix = "family.child.friends")
 public class Friend {
     private String hobby;
     private String gender;
