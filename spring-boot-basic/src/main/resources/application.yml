@@ -1,9 +1,19 @@
-#上传文件大小配置，设置为-1为无限制
 spring:
-  servlet:
-    multipart:
-      max-file-size: 300MB
-      max-request-size: 100MB
-
-#  profiles:
-#    active: test
+   profiles:
+     active: dev
+#server:
+#  port: 8888
+#spring:
+#  datasource:
+#    driverClassName: org.h2.Driver
+#    url: jdbc:mysql://127.0.0.1:3308/db_soft1921?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+#    username: root
+#    password: shl521shl
+#  jpa:
+#    database: h2
+#    hibernate:
+#      ddl-auto: update
+#  h2:
+#    console:
+#      path: /h2-console
+#      enabled: true

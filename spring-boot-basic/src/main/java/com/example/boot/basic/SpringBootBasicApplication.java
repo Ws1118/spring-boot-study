@@ -10,7 +10,7 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
  */
 
 @SpringBootApplication
-@ImportResource(locations = {"classpath:beans.xml"})
+//@ImportResource(locations = {"classpath:beans.xml"})
 @EnableOpenApi
 public class SpringBootBasicApplication {
 
