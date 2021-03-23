@@ -3,9 +3,9 @@
   <component name="MyBatisCodeHelperDatasource">
     <option name="projectProfile">
       <ProjectProfile>
-        <option name="javaMapperPackage" value="com.ws.boot.mybatis.mapper" />
+        <option name="javaMapperPackage" value="top.wandan.boot.mybatis.mapper" />
         <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
-        <option name="javaModelPackage" value="com.ws.boot.mybatis.domain" />
+        <option name="javaModelPackage" value="top.wandan.boot.mybatis.domain" />
         <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
         <option name="lastDatabaseCrudChooseModuleName" value="spring-boot-mybatis" />
         <option name="lombokAllArgConstructor" value="true" />
@@ -16,9 +16,9 @@
             <entry key="spring-boot-mybatis">
               <value>
                 <UserPackageAndPathInfoByModule>
-                  <option name="javaMapperPackage" value="com.ws.boot.mybatis.mapper" />
+                  <option name="javaMapperPackage" value="top.wandan.boot.mybatis.mapper" />
                   <option name="javaMapperPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
-                  <option name="javaModelPacakge" value="com.ws.boot.mybatis.domain" />
+                  <option name="javaModelPacakge" value="top.wandan.boot.mybatis.domain" />
                   <option name="javaModelPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/spring-boot-mybatis/src/main/resources" />
@@ -27,7 +27,7 @@
             </entry>
           </map>
         </option>
-        <option name="removeTablePreName" value="t" />
+        <option name="removeTablePreName" value="T" />
         <option name="tableGenerateConfigs">
           <map>
             <entry key="db_soft1921:t_clazz">
@@ -64,8 +64,10 @@
               <value>
                 <TableGenerateConfig>
                   <option name="generatedKey" value="student_id" />
-                  <option name="javaModelName" value="TStudent" />
+                  <option name="javaModelName" value="Student" />
                   <option name="moduleName" value="spring-boot-mybatis" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
                   <option name="useActualColumnName" value="false" />
                 </TableGenerateConfig>
               </value>
