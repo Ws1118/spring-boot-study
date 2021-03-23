@@ -1,23 +1,23 @@
-server:
-  port: 8080
-
 spring:
   servlet:
     multipart:
       max-file-size: 300MB
-      max-request-size: 100MB
-
+      max-request-size: 300MB
   datasource:
-    url: jdbc:mysql://127.0.0.1:3308/db_soft1921?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://127.0.0.1:3306/db_soft1921?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: shl521shl
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    database: h2
-    hibernate:
-      ddl-auto: update
-  h2:
-    console:
-      path: /h2-console
-      enabled: true
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+    show-sql: true
+
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML
+    prefix: classpath:/templates/
 

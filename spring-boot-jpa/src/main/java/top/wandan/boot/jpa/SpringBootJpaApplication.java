@@ -1,4 +1,4 @@
-package top.wandan.boot.jpa;
+package top.leikai.boot.jpa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
