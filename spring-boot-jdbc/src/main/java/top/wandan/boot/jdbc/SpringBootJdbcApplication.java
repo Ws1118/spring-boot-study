@@ -1,4 +1,4 @@
-package top.wandan.boot.jdbc;
+package top.liekai.boot.jdbc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
