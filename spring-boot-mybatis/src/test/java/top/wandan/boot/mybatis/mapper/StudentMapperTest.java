@@ -85,15 +85,15 @@ class StudentMapperTest {
         assertEquals(1, n);
     }
 
-//    @Test
-//    void batchDelete() {
-//        List<Integer> idList = new ArrayList<>();
-//        idList.add(3001);
-//        idList.add(3002);
-//        idList.add(3003);
-//        int n = studentMapper.batchDelete(idList);
-//        assertEquals(3, n);
-//    }
+    @Test
+    void batchDelete() {
+        List<Integer> idList = new ArrayList<>();
+        idList.add(3001);
+        idList.add(3002);
+        idList.add(3003);
+        int n = studentMapper.batchDelete(idList);
+        assertEquals(3, n);
+    }
 
     @Test
     void selectByDynamicSql() {
